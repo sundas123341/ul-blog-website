@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University of Layyah Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* 1. HEADER SECTION (Centered Logo, Title & Navigation) */
+        header {
+            background: linear-gradient(135deg, #e65100, #2e7d32);
+            color: white;
+            padding: 25px 20px 15px 20px;
+            text-align: center;
+        }
+        .logo-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        .logo-box img {
+            width: 70px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: white;
+            object-fit: cover;
+            border: 2px solid white;
+        }
+        .logo-box h2 {
+            font-size: 24px;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+        nav {
+            margin-top: 15px;
+            padding-top: 10px;
+            border-top: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* FRONT CAMPUS BANNER IMAGE */
+        .hero-banner {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* 2. MAIN SECTION */
+        .container {
+            display: flex;
+            padding: 20px;
+            gap: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .articles {
+            flex: 2;
+        }
+        .post {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        .post img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        .post h3 {
+            color: #2e7d32;
+            margin-top: 0;
+        }
+        .quick-links {
+            flex: 1;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            height: fit-content;
+        }
+        .quick-links h3 {
+            color: #2e7d32;
+            margin-top: 0;
+            border-bottom: 2px solid #2e7d32;
+            padding-bottom: 5px;
+        }
+        .quick-links ul {
+            list-style: none;
+            padding: 0;
+        }
+        .quick-links li {
+            margin-bottom: 10px;
+        }
+        .quick-links a {
+            color: #e65100;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .quick-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* 3. FOOTER AREA */
+        footer {
+            background-color: #111;
+            color: white;
+            padding: 25px 20px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .footer-box {
+            flex: 1;
+            min-width: 250px;
+            max-width: 400px;
+        }
+        .footer-box h3 {
+            color: #ff9800;
+            margin-top: 0;
+        }
+        .contact-form input, .contact-form textarea {
+            display: block;
+            margin-bottom: 8px;
+            width: 100%;
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        .contact-form button {
+            background-color: #e65100;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            cursor: pointer;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        .contact-form button:hover {
+            background-color: #2e7d32;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. Header Section (Centered Logo, Title & Nav Links) -->
+    <header>
+        <div class="logo-box">
+            <img src="logo.png" alt="University Logo">
+            <h2>University of Layyah</h2>
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Front Campus Banner Image (campus.jpeg) -->
+    <img src="campus.jpeg" alt="University of Layyah Campus" class="hero-banner">
+
+    <!-- 2. Main Section (2 Articles + Quick Links) -->
+    <div class="container">
+        
+        <div class="articles">
+            <!-- Article 1: Department of IT -->
+            <div class="post">
+                <h3>Department of Information Technology</h3>
+                <img src="it-dept.jpg" alt="Department of IT">
+                <p>The Department of Information Technology at the University of Layyah is committed to preparing professionals who can manage, develop, and secure modern information systems that support digital transformation across organizations. The Department focuses on equipping students with practical skills and technological expertise to meet the evolving demands of the information-driven world.</p>
+                <p>By integrating core computing concepts, applied technologies, and industry-relevant practices, the Department enables students to design, implement, and maintain efficient IT solutions. Emphasis is placed on system administration, networking, database management, cybersecurity, and emerging digital technologies.</p>
+            </div>
+
+            <!-- Article 2: University Vision & Mission -->
+            <div class="post">
+                <h3>University Vision & Mission</h3>
+                <img src="vision.jpg.jpg" alt="University Campus Vision">
+                <p>The University of Layyah aims to become a center of educational excellence, research, and innovation in the region. Our mission is to empower young minds through quality academic programs, fostering critical thinking, ethical values, and leadership capabilities.</p>
+                <p>We are dedicated to providing state-of-the-art academic resources, modern laboratory infrastructure, and an inclusive campus culture that inspires continuous learning and societal contribution.</p>
+            </div>
+        </div>
+
+        <!-- Quick Links Section -->
+        <div class="quick-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">> Admissions Portal</a></li>
+                <li><a href="#">> Student Portal</a></li>
+                <li><a href="#">> Date Sheet & Exams</a></li>
+                <li><a href="#">> Faculty Directory</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- 3. Footer Area -->
+    <footer>
+        <div class="footer-box">
+            <h3>Basic Info</h3>
+            <p><strong>University of Layyah</strong></p>
+            <p>Location: Layyah, Punjab, Pakistan</p>
+            <p>Email: info@layyah.edu.pk</p>
+            <p>Phone: +92 68 1234567</p>
+        </div>
+
+        <div class="footer-box contact-form">
+            <h3>Contact Us</h3>
+            <form>
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <textarea rows="3" placeholder="Your Message"></textarea>
+                <button type="button">Submit</button>
+            </form>
+        </div>
+    </footer>
+
+</body>
+</html>
